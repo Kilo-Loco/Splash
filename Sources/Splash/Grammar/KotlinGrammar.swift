@@ -70,7 +70,7 @@ public struct KotlinGrammar: Grammar {
 private extension KotlinGrammar {
     static let keywords = ([
         "final", "class", "abstract", "enum", "interface",
-        "val", "var", "fun", "typealias", "data",
+        "val", "var", "fun", "typealias", "data class",
         "init", "if", "else", "return", "get",
         "throw", "throws", "for", "in", "open",
         "import", "when", "static", "do", "catch", "as",
@@ -85,7 +85,7 @@ private extension KotlinGrammar {
     ]
 
     static let declarationKeywords: Set<String> = [
-        "class", "data", "enum", "fun",
+        "class", "data class", "enum", "fun",
         "abstract", "typealias", "import",
         "interface", "constructor", "init"
     ]
